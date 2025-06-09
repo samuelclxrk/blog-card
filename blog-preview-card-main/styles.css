@@ -1,0 +1,26 @@
+body {
+    background-color: hsl(47, 88%, 63%);
+    align-content: center;
+}
+
+.learn {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    background-color: hsl(47, 88%, 63%);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.published {
+    text-transform: capitalize;
+    font-size: 16px;
+    color: hsl(0, 0%, 7%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card {
+    background-color: white;
+    align-items: ;
+}
