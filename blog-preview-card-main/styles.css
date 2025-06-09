@@ -1,26 +1,80 @@
-body {
-    background-color: hsl(47, 88%, 63%);
-    align-content: center;
+/* Basic layout */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #facc15; /* yellow background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.learn {
-    text-transform: capitalize;
-    font-size: 16px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 500;
-    background-color: hsl(47, 88%, 63%);
-    border-radius: 10px;
-    padding: 5px;
-}
-
-.published {
-    text-transform: capitalize;
-    font-size: 16px;
-    color: hsl(0, 0%, 7%);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
+/* Card styling */
 .card {
-    background-color: white;
-    align-items: ;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 6px 6px 0 black;
+  max-width: 320px;
+  overflow: hidden;
+}
+
+/* Image */
+.card-image {
+    display: inline-block;
+    padding: 5px;
+
+}
+
+/* Inner content */
+.card-content {
+  padding: 1.5rem;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #facc15;
+  color: black;
+  font-weight: bold;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.date {
+  font-size: 0.75rem;
+  color: #555;
+  margin: 0;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  color: #111;
+}
+
+.description {
+  font-size: 0.875rem;
+  color: #444;
+}
+
+/* Author section */
+.author {
+  display: flex;
+  align-items: center;
+  margin-top: 1.25rem;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.name {
+  font-size: 0.85rem;
+  color: #111;
 }
