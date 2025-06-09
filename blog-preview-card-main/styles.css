@@ -1,80 +1,68 @@
-/* Basic layout */
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-color: #facc15; /* yellow background */
+body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  height: 100vh;
+  background-color: hsl(47, 88%, 63%);
 }
 
-/* Card styling */
-.card {
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 6px 6px 0 black;
-  max-width: 320px;
-  overflow: hidden;
-}
-
-/* Image */
 .card-image {
-    display: inline-block;
-    padding: 5px;
-
+  border-radius: 10px;
+  margin: 5px
 }
 
-/* Inner content */
-.card-content {
-  padding: 1.5rem;
+.card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* <<< This is KEY */
 }
+
 
 .badge {
   display: inline-block;
-  background-color: #facc15;
-  color: black;
-  font-weight: bold;
-  font-size: 0.75rem;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  margin-bottom: 0.5rem;
+  background-color: hsl(47, 88%, 63%);
+  border-radius: 10px;
+  padding: 7px;
+  font-weight: 800;
+  margin: 5px;
 }
 
 .date {
-  font-size: 0.75rem;
-  color: #555;
-  margin: 0;
+  margin: 5px;
 }
 
 .title {
-  font-size: 1.1rem;
-  font-weight: bold;
-  margin: 0.5rem 0;
-  color: #111;
+  margin: 5px;
+}
+.title:hover {
+  color: hsl(47, 88%, 63%);
 }
 
-.description {
-  font-size: 0.875rem;
-  color: #444;
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: hsl(0, 0%, 100%);
+  padding: 10px;
+  box-shadow: 10px 10px 0 black;
+  border: solid black;
+  border-radius: 15px;
+  max-width: 350px;
 }
 
-/* Author section */
+.text {
+  margin: 5px;
+  color: hsl(0, 0%, 42%) ;
+}
+
 .author {
   display: flex;
+  margin: 5px;
   align-items: center;
-  margin-top: 1.25rem;
 }
 
-.avatar {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  margin-right: 0.5rem;
-}
-
-.name {
-  font-size: 0.85rem;
-  color: #111;
+.author-text {
+  font-weight: 800;
+  margin: 10px
 }
